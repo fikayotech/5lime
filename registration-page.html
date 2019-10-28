@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+    <style>
+        body{
+        margin: 0;
+        padding: 0;
+        background-image: url('slime.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Nunito;
+        }
+
+        .wrapper{
+            width: 400px;
+            height: 900px;
+            background-color: #52a56be7;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 15px;
+        }
+        .wrapper h2{
+            text-align: center;
+        }
+
+        .reg{
+            margin-top: -30px;
+        }
+        .reg input[type="text"], input[type="password"], input[type="email"]{
+        border:none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 20px;
+        color: #fff;
+        font-size: 16px;
+        width: 90%;
+        }
+        .reg input[type="submit"]{
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #fff;
+        color: #52a56b;
+        border-radius: 5px;
+        }
+        .reg input[type="submit"]:hover{
+            cursor: pointer;
+            background-color: rgb(19, 203, 216);
+        }
+
+        #gender{
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #fff;
+        color: #52a56b;
+        border-radius: 5px;
+        }
+        #gender:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="wrapper">
+    <h2>Register Here</h2><br>
+    <form action="payment-new-user.html">
+    <div class="reg">
+    <p>First Name</p>
+    <input type="text" name="Name" placeholder="">
+    <p>Last Name</p>
+    <input type="text" name="Name" placeholder="">
+    <p>Gender</p>
+    <select name="" id="gender">
+        <option value="">Male</option>
+        <option value="">Female</option>
+    </select>
+    <p>Email</p>
+    <input type="email"  name="Email" placeholder="@mail.com">
+    <p>Password</p>
+    <input type="password" name="password" placeholder="password">
+    <p>Confirm Password</p>
+    <input type="password" name="password" placeholder="confirm password">
+    <p>Referal Code</p>
+    <input type="text" name="code" placeholder="">
+    <p>Phone Number</p>
+    <input type="text" name="number" placeholder="">
+    <br>
+    <br>
+    <input type="submit" value="Sign Up" class="btn">
+    </div>
+    </form>
+</div>
+</body>
+</html>
